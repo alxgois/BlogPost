@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "HelveticaNowDisplay-Regular";
+    color: white
+}
+
+body {
+    background-color: #161616;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(29, 29, 31);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 8%;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "HelveticaNowDisplay-Medium";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo img {
+    width: 30px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    height: 100%;
+}
+
+.nav-list li {
+    display: flex;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.nav-list a:hover {
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.fa-circle-plus, .fa-bars {
+    color: white
+}
+
+#icon-add-post {
+    transition: all 0.5s ease;
+}
+
+#icon-add-post:hover {
+    transform: scale(1.3);
+    transition: all 0.5s ease;
+    color: #00BF63;
+    cursor: pointer;
+}
+
+#menu-icon {
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.container-menu-wrapper {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #icon-add-post {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    /* backdrop-filter: blur(32px); */
+    .nav-list {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        background-color: rgb(29, 29, 31); ;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        padding: 84px 8%;
+        font-size: 24px;
+        transition: all .5s ease;
+    }
+
+    .nav-list li {
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-list a {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        padding: 20px 0px;
+    }
+
+    .nav-list.open {
+        right: 0;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1025px) {
+    
+}

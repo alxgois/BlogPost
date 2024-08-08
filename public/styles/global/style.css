@@ -1,0 +1,115 @@
+@font-face { font-family: "HelveticaNowDisplay-Medium";src: url('../../fonts/HelveticaNowDisplay-Medium.ttf'); }
+@font-face { font-family: "HelveticaNowDisplay-Regular";src: url('../../fonts/HelveticaNowDisplay-Regular.ttf'); }
+
+.main-container {
+    margin-top: 60px;
+    padding: 0 8%;
+}
+
+.post-view {
+    width: 400px; /* Ajuste conforme necessário */
+    box-shadow: rgba(255, 255, 255, 0.392) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .post-view h2 {
+    margin: 0;
+  }
+  
+  .post-content {
+    
+  }
+  
+  .post-description {
+    margin: 20px 0px;
+    display: -webkit-box;         /* Define um contêiner flexível */
+    -webkit-box-orient: vertical; /* Orienta o conteúdo verticalmente */
+    -webkit-line-clamp: 5;        /* Limita o texto a 3 linhas */
+    overflow: hidden;             /* Oculta o texto que ultrapassa as 3 linhas */
+    text-overflow: ellipsis;      /* Adiciona reticências no final do texto */
+  }
+  
+  .post-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 30px;
+    box-shadow: rgba(255, 255, 255, 0.392) 0px 2px 8px 0px;
+  }
+
+  .input-view {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .input-view label {
+    font-size: 1.2rem;
+  }
+
+  .input-view input, .input-view textarea {
+    border-radius: 5px;
+    height: 40px;
+    color: black;
+    padding: 20px 10px;
+    font-size: 1.1rem;
+  }
+
+  .input-view textarea {
+    padding: 10px 10px;
+    height: 250px;
+    resize: none;
+  }
+
+  /* btn btn-danger
+  btn btn-primary */
+
+  .btn {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    border: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;;
+    cursor: pointer;
+    z-index: 0;
+  }
+
+  .btn:hover {
+    filter: brightness(0.8);
+  }
+
+  .btn-primary {
+    --color: #007bff;
+    background-color: var(--color);
+  }
+
+ .btn-danger {
+  --color: #dc3545;
+  background-color: var(--color);
+ }
+
+ .btn-submit {
+  width: 100px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: #00BF63;
+}
+
+.form-container-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: center;
+}
